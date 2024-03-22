@@ -1,0 +1,51 @@
+@use 'reset';
+@use 'variaveis';
+@use 'products';
+@use 'mobile';
+
+body {
+    background-color: variaveis.$bg;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+header {
+    background-color: variaveis.$headerBg;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+    }
+}
+
+.menu {
+    display: flex;
+    
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+
+    li a {
+        color: variaveis.$fontColor;
+        text-decoration: none;
+    }
+
+}
+
+section {
+    padding: 56px 0;
+}
