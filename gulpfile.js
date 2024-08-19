@@ -14,20 +14,17 @@ function compilaJavascript() {
     return gulp
         .src('./source/scripts/*js')
         .pipe(uglify())
-        .pipe(obfuscate())
         .pipe(gulp.dest('./build/scripts'))
 }
 
 function compilaSass() {
     return gulp
         .src('./source/styles/main.scss')
-        .pipe(sourcemaps.init())
         .pipe(
             sass({
                 outputStyle: 'compressed'
             })
         )
-        .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./build/styles'))
 }
 
