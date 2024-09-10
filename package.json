@@ -1,0 +1,24 @@
+{
+  "name": "exercicio",
+  "version": "1.0.0",
+  "description": "\"# curso-ebac-frontend\"",
+  "main": "index.js",
+  "scripts": {
+    "less": "less-watch-compiler ./src/styles ./build/styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjsb/curso-ebac-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjsb/curso-ebac-frontend/issues"
+  },
+  "homepage": "https://github.com/mjsb/curso-ebac-frontend#readme",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
+  }
+}
